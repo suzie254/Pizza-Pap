@@ -18,3 +18,25 @@ $(document).ready(function(){
         '<option value="200">Extra Cheese</option>'+
     '</select>');
 });
+
+$('#addcart').click(function(event){
+    event.preventDefault();
+    var size = parseInt($('#size option:selected').val());
+    var crust = parseInt($('#crust option:selected').val());
+    let toppings= [];
+    var topping = parseInt($('#topping option:selected').val());
+    let toppingOne = parseInt($('#topping1 option:selected').val())
+    if(!isNaN(topping)) {
+      toppings.push(topping)
+    } 
+    if(!isNaN(toppingOne)) {
+      toppings.push(toppingOne)
+    }
+    var quantity = parseInt($('#quantity').val());
+    let costofToppings = 0
+    
+    if(toppings.length){
+      for(i in toppings){
+          costofToppings += toppings[i];
+      }
+    }
