@@ -40,3 +40,6 @@ $('#addcart').click(function(event){
           costofToppings += toppings[i];
       }
     }
+    let cost = size + crust+ costofToppings
+    var total = cost*quantity;
+    var grandTotal = 0;
