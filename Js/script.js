@@ -79,4 +79,10 @@ $('#addcart').click(function(event){
         $(".no-button").hide();
         $("#totalcost span").html(grandTotal);
       });
-  
+      $("#addaddress").click(function() {
+        var address = $(".address input").val();
+        $("#yes").show();
+        $(".address").hide();
+        $("#yes span").html(address);
+      });
+    
