@@ -71,3 +71,12 @@ $('#addcart').click(function(event){
         $("#totalcost span").html(grandTotal + 300);
       });
   
+      $(".no-button").click(function() {
+        $("#delivercost").hide();
+        $("#yes").hide();
+        $("#no").show();
+        $(".yes-button").hide();
+        $(".no-button").hide();
+        $("#totalcost span").html(grandTotal);
+      });
+  
