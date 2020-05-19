@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles1.css" rel="stylesheet" type="text/css">
+    <title>Pizza Pap</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="main">
+            <div class="navbar">
+                <div class="navhead">
+                    <img class="img" src="./images/logo.png" alt="logo">
+                </div>
+                <div class="navbody">
+                    <ul>
+                        <li><a class="a" href="index.html">Home</a></li>
+                        <li><a class="a" href="#">About Us</a></li>
+                        <li><a class="a" href="order.html">Services</a></li>
+                        <li><a class="a" href="#mycontact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row orders">
+                <div class="col-md-6 item">
+                    <div class="form_left">
+            <div class="row orders">
+                <div class="col-md-6 item">
+                    <div class="form_left">
+                        <img src="./images/form.jpg" alt="form">
+                    </div>
+                    <div class="form_right">
+                        <h2>Pizza Pap Custom Pizza</h2>
+                        <form class="pizzaform" id="pizzaform">
+                            <div class="size">
+                                <select id="size" class="input" required>
+                                    <option value="" hidden disabled selected value>Pizza size....</option>
+                                    <option value="600">Small</option>
+                                    <option value="800">Medium</option>
+                                    <option value="1000">Large</option>
+                                </select>
+                            </div>
+                            <div class="crust">
+                                <select id="crust" class="input" required>
+                                    <option value="" hidden disabled selected value>Pizza crust.....</option>
+                                    <option value="300">Crispy</option>
+                                    <option value="200">Stuffed</option>
+                                    <option value="100">Gluten Free</option>
+                                </select>
+                            </div>
+                            <div class="toppings">
+                                <select id="topping" class="input" required>
+                                    <option value="" hidden disabled selected value>Pizza topping....</option>
+                                    <option value="200">Pepperoni</option>
+                                    <option value="200">Mushrooms</option>
+                                    <option value="200">Sausage</option>
+                                    <option value="200">Onions</option>
+                                    <option value="200">Bacons</option>
+                                    <option value="200">Extra Cheese</option>
+                                </select>
+                            </div>
+                            <div class="quantity">
+                                <input class="input" type="number" id="quantity" placeholder="Quantity..." required>
+                            </div>
+                            <input type="submit" value="Add topping" class="button" id="addtopping">
+                            <input type="submit" value="Order" class="button" id="addcart">
+                            <input type="button" class="refresh button" value="Refresh">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5 cart">
+                    <div class="card">
+                        <h5 class="card-header">Your Cart</h5>
+                        <div class="card-body">
+                            <div id="cart">
+                                <table class="table" id="tablecart">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Pizza size</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Unit Pirce</th>
+                                            <th scope="col">Sub Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="delivery">
+                                <div class="delivery-info">
+                                    <p id="totalcost">The total is: <span></span></p>
+                                    <p id="delivercost">Would you like a delivery at 300?</p>
+                                    <p id="no">Pick your order at your nearest store</p>
+                                    <p id="yes">Your order will be delivered at: <span></span></p>
+                                    <div class="address">
+                                        <input type="text" placeholder="Your address....." class="input address" />
+                                        <input type="submit" value="Enter" class="button" id="addaddress">
+                                    </div>
+                                </div>
+                                <input type="submit" value="Yes" class="yes-button button">
+                                <input type="submit" value="No" class="no-button button">
+                            </div>
+                            <input type="submit" value="Checkout" class="checkout button" id="checkout">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="mycontact">
+            <div class="fcontent">
+                <div class="fsection about">
+                    <h2>Pizza Pap</h2>
+                    <p>
+                        Pizza Pap is your local pizza delivery site that helps you
+                        save on delivery cost. We have your favourite pizza on Pizza Pap
+                        platform with an attractive and delicious menu
+                        for home, party, office delivery
+                    </p>
+                </div>
+                <div class="fsection links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#myabout">About Us</a></li>
+                        <li><a href="order.html">Services</a></li>
+                        <li><a href="#mycontact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="fsection email">
+                    <h2>Email Us</h2>
+                    <form>
+                        <input type="email" class="femail" name="email" placeholder="Your email address">
+                        <textarea name="message" class="fmessage" placeholder="Your message....."></textarea>
+                        <button type="submit" class="fbutton">
+                            <i class="fa fa-envelope"></i>
+                            Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; Pizza P2ap 2020 | Susan Akinyi
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/scripts.js"></script>
+</html>
