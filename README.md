@@ -8,7 +8,7 @@
 
 ### Description
 
-Lets you place an order for delivery or carry-out. You can select from its specialty pizzas or build your own.
+Pizza-Pap is your local pizza delivery site that helps you save on delivery cost. We have your favourite pizza on Pizza-pap platform with an attractive and delicious menu for home, party, office delivery
 
 ## Setup/Installation Requirements
 
