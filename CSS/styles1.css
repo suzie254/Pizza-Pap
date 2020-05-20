@@ -1,0 +1,100 @@
+.main{
+    background: linear-gradient(#3d1103b2, #271903d2) ,url(../images/bg1.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    height: 100vh;
+}
+.item{
+      border: 1px solid maroon;
+      margin-top: 20px;
+      left: 50px;
+      width:500px;
+      height: 400px;
+      text-align: center;
+      display: flex;
+      color: white;
+      box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+  }
+  .button,img{
+      text-decoration: none;
+      color: #edf0f1;
+      font-size: 16px;
+      cursor: pointer;   
+  }
+  .form_left{
+      width: 45%;
+      background: rgba(20, 20, 20, .8);
+      border-right: 2px solid maroon;
+  }
+  .form_left img{
+      border-radius: 50%;
+      opacity: 0.8;
+      height: 250px;
+      width: 250px;
+      margin-top: 60px;
+      
+  }
+  h2 {
+      font-weight: 300;
+   }
+   .form_right{
+      width: 55%;
+      padding: 40px 0;
+      background: rgba(10, 180, 180, 0.1);
+  }
+  .input {
+      margin: 8px ;
+      margin-left: 40px;
+      font-size: 16px;
+      padding: 5px;
+      width: 300px;
+      border: none;
+      border-bottom: 1px solid maroon;
+      background: rgba(20, 20, 20, .4);
+      color: white;
+      outline: none;
+    }
+    .input::-webkit-input-placeholder{
+        color: white;
+        padding-left: 6px;
+    }
+  .button{
+      border: none;
+      padding: 6px 20px;
+      margin-top: 10px;
+      text-decoration: none;
+      font-size: 16px; 
+      background-color: maroon;
+      border-radius: 50px;
+      transition: all 0.5s ease;
+  }
+  .button:hover{
+      background-color: #553607a6;
+      transition: all 0.5s ease;
+  
+  }
+  .cart{
+      margin:22px 0px 0px 80px;
+  }
+  table{
+	width: 95%;
+	opacity: 0.9;
+    font-weight: 800;
+    border: none;
+}
+td,th{
+	text-align: center;
+	color: black;
+    border: none;
+}
+th{
+	background-color: maroon;
+}
+tr:nth-child(even){
+	background-color: maroon;
+}
+tr:nth-child(odd){
+	background-color:  #a76d1783;
+}
+#addtopping{
+    margin-right: 0px;
+}
